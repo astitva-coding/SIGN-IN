@@ -12,12 +12,16 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	overflow: scroll;
+	min-width: 100vw;
 }
 .container {
 	background-color: #fff;
 	padding: 30px 30px;
 	border-radius: 20px;
 	position: relative;
+	width: 90%;
+	max-width: 500px;
+	min-width: 300px;
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
 }
 h1 {
@@ -29,7 +33,7 @@ h1 {
 	position: relative;
 	width: 200px;
 	height: 46px;
-	margin-bottom: 35px;
+	margin-bottom: 10px;
 	/* border-bottom: 2px; */
 	background-color: transparent;
 }
@@ -63,7 +67,8 @@ h1 {
 .grid-container{
 	display: grid;
 	grid-template-columns: auto auto;
-	gap: 10px;
+	gap: 30px;
+	grid-template-columns: repeat(auto-fill, 186px);
 }
 .inputBox input:focus ~ span,
 .inputBox input:valid ~ span {
